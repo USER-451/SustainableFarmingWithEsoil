@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFES – Sustainable Farming with E-Soil</title>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0f16, #111827);
+    color: #e5e7eb;
+  }
+  .section {
+  scroll-margin-top: 140px; /* height to offset header after shrinking */
+}
+
+
+  /* HEADER */
+  header {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(14px);
+    padding: 55px 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), 
+                box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+    text-align: center;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.4);
+  }
+
+  header.shrink {
+    padding: 18px 40px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #4fd1c5;
+    transition: font-size 0.15s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  header.shrink h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    margin-top: 18px;
+  }
+
+  nav a {
+    margin: 0 14px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: #4fd1c5;
+  }
+
+  /* SECTIONS */
+  .section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 70px 60px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 60px rgba(0,0,0,0.7);
+  }
+
+  h2 {
+    color: #4fd1c5;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* SCROLLING IMAGE STRIP (BIGGER IMAGES) */
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 35px;
+  }
+
+  .scroll-images {
+    display: inline-flex;
+    animation: scroll 18s linear infinite;
+  }
+
+  .scroll-images:hover {
+    animation-play-state: paused;
+  }
+  .p{
+    color:#0a0f16;
+  }
+  .scroll-images img {
+    width: 420px;   /* increased from 340px */
+    height: 260px;  /* increased from 220px */
+    margin: 0 28px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+</head>
+
+<body>
+
+<header id="mainHeader">
+  <h1>SFES – Sustainable Farming with E-Soil</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#model">Our Model</a>
+    <a href="#esoil">E-Soil Tech</a>
+    <a href="#experiment">Experiments</a>
+    <a href="#plants">Plants Used</a>
+    <a href="#ack">Acknowledgment</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contacts">Contacts</a>
+  </nav>
+</header>
+
+<div id="home" class="section">
+  <h2>Welcome to SFES</h2>
+  <p>
+    SFES (Sustainable Farming with E-Soil) is an innovative approach toward a greener future.
+    We combine modern hydroponics with an electrically enhanced substrate known as
+    <strong>E-Soil</strong>, designed to boost plant growth by nearly <strong>70%</strong>.
+    Our goal is to revolutionize sustainable agriculture using clean technology and accessible materials.
+  </p>
+</div>
+
+<div id="model" class="section">
+  <h2>Our Sustainable Farming Model</h2>
+  <p>
+    Our model integrates hydroponics with a specially engineered substrate—E-Soil. This combination enables
+    faster plant growth, higher nutrient absorption, and climate-friendly farming. The system is designed to be
+    low-maintenance, eco-friendly, and highly efficient. Applying controlled voltage increases nitrogen
+    solubility in the medium, resulting in overall improved plant growth.
+  </p>
+</div>
+
+<div id="esoil" class="section">
+  <h2>What is E-Soil?</h2>
+  <p>
+    E-Soil is a voltage-activated substrate created using <strong>coco peat</strong>, a cellulose-rich material known for
+    high water retention and excellent aeration. Cellulose conducts electricity better than typical soil.
+    Applying a safe electrical voltage increases nitrogen solubility, enhances nutrient uptake, and
+    accelerates plant growth significantly.
+  </p>
+</div>
+
+<div id="experiment" class="section" style="display: flex; align-items: center; gap: 40px;">
+  <div style="flex: 1;">
+    <h2>Our Experiments</h2>
+    <p>We conducted controlled experiments on barley seeds using regular coco peat versus E-Soil.</p>
+    <ul>
+      <li>Faster germination</li>
+      <li>Stronger and longer roots</li>
+      <li>Nearly 70% higher physical growth</li>
+      <li>Healthier leaves</li>
+      <li>Much lower water usage with higher yield</li>
+    </ul>
+    <p>These results show the clear advantages of voltage-enhanced substrates.</p>
+  </div>
+
+  <div style="flex: 1; display:flex; justify-content:center;">
+    <img src="graph.jpeg" alt="Growth Comparison Graph" style="width:90%; border-radius:18px; box-shadow:0 0 25px rgba(0,0,0,0.5); object-fit:cover;">
+  </div>
+</div>
+
+<div id="plants" class="section">
+  <h2>Plants Used in the Model</h2>
+  <p>For the model demonstration, we chose the <strong>Spider Plant</strong> because:</p>
+  <ul>
+    <li>It is an excellent air-purifying indoor plant</li>
+    <li>Requires very little maintenance</li>
+    <li>Performs extremely well in hydroponic setups</li>
+    <li>Shows visibly improved growth in E-Soil</li>
+  </ul>
+  <p>Earlier tests were done on <strong>barley</strong>, which showed remarkable enhancements.</p>
+</div>
+
+<div id="ack" class="section">
+  <h2>Acknowledgment</h2>
+  <p>
+    We express our gratitude to our teachers and mentors for their support throughout the project:
+  </p>
+  <ul>
+    <li>Sangeeta Adlakha Ma’am, Priyanka Ma’am, and Harpreet Sir for essential guidance</li>
+    <li>Aruna Ma’am for motivating us and helping us reach this stage</li>
+    <li>Linköping University for introducing the concept of E-Soil to the world</li>
+  </ul>
+</div>
+
+<div id="achievements" class="section">
+  <h2>Our Achievements</h2>
+  <p>
+    SFES received recognition for innovation in sustainable farming and electrical enhancement in
+    hydroponics. We reached the CBSE National Science Exhibition 2024 and were featured in the newspaper.
+  </p>
+
+  <div class="scroll-container">
+    <div class="scroll-images">
+      <img src="WhatsApp Image 2025-11-01 at 20.24.37.jpeg" alt="">
+      <img src="modal.jpeg" alt="">
+      <img src="exp.jpeg" alt="">
+      <img src="nobatidao.jpeg" alt="">
+      <img src="suii.jpeg" alt="">
+    </div>
+  </div>
+</div>
+  
+  <div id="contacts" class="section">
+<section id="contact" style="padding: 70px 0; background: white;">
+  <div style="max-width: 900px; margin:auto; display:flex; gap:40px; flex-wrap:wrap;">
+    
+    <div style="flex:1; min-width:250px;">
+      <h2 style="font-size: 2.2rem; font-weight:700;">Contact Us</h2>
+      <p style="margin-bottom:20px; color:#444;">
+        Feel free to reach us using the details below.
+      </p>
+
+      <p id="p"><strong>📧 Email:</strong> parvs.basic123@gmail.com</p>
+      <p id="p"><strong>📞 Phone:</strong> +91 8427535616</p>
+      <p id="p"><strong>📍 Location:</strong> Chandigarh, Punjab</p>
+    </div>
+
+    <form style="flex:1; min-width:300px;">
+      <input type="text" placeholder="Name" 
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;">
+      
+      <input type="email" placeholder="Email" 
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;">
+
+      <textarea placeholder="Message" rows="6"
+        style="width:100%; padding:14px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;"></textarea>
+
+      <button style="padding:14px; width:100%; border:none; background:black; color:white; 
+                    font-size:1.1rem; border-radius:8px; cursor:pointer;">
+        Send Message
+      </button>
+    </form>
+
+  </div>
+</section>
+
+  </div>
+
+<script>
+  const header = document.getElementById("mainHeader");
+
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("shrink", window.scrollY > 60);
+  });
+</script>
+
+</body>
+</html>
